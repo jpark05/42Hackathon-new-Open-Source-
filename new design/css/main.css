@@ -1,0 +1,98 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+/* typography */
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    color: #ffffff;
+}
+/* Main Video Page */
+#bgvideo
+{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+/* Layout */
+.container{
+    width: 1170px;
+    padding-top: 300px;
+    margin: 0 auto;
+}
+
+.header nav{
+    position: fixed;
+    left: 0; right:0; top:0;
+    padding: 0 47px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+.header nav .logo span{
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    margin-left: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.header nav ul{
+    max-width: 1170px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header nav ul li{
+    margin-left: 46px;
+}
+
+.header nav ul li a{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.fixed-nav {position: fixed; top:0; z-index: 999;}
+
+.container h2{
+    font-size: 95px;
+    line-height: 90px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+}
+
+
+/* PPT Page Slide */
+.slide
+{
+    background: no-repeat center center/cover;
+}
+
+#slide1
+{
+    background-image: url('../images/slide1.jpg');
+}
+#slide2
+{
+    background-image: url('../images/slide2.jpg');
+}
+#slide3
+{
+    background-image: url('../images/slide3.jpg');
+}
