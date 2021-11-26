@@ -32,11 +32,15 @@
     <meta property="og:description" content="altibase test results" />
 
     <!-- FONT AWESOME SCRIPT -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- MODERNIZR -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- PPT PAGE SWIPER-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
     <!-- MAIN PAGE FULLPAGE JS-->
     <script src="js/fullpage.min.js"></script>
@@ -47,6 +51,13 @@
     <script src="js/main.js"></script>
 </head>
 <body>
+    <aside class="fixed-nav">
+        <a href="#firstPage" class="active">firstPage</a>
+        <a href="#secondPage">secondPage</a>
+        <a href="#thirdPage" class="active">thirdPage</a>
+        <a href="#forthpage" class="active">forthpage</a>
+        <a href="#fifthpage" class="active">fifthpage</a>
+    </aside>
     <div id="fullpage">
         <div class="section video header" data-anchor="firstPage">
             <div class="video-container">
@@ -62,54 +73,127 @@
                     </a>
                 </h1>
                 <ul class="main-menu">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">PPT</a></li>
-                    <li><a href="">Graph1</a></li>
-                    <li><a href="">Graph2</a></li>
-                    <li><a href="">Graph3</a></li>
-                    <li><a href="">Graph4</a></li>
+                    <li><a href="#firstPage">Home</a></li>
+                    <li><a href="#secondPage">PPT</a></li>
+                    <li><a href="#thirdPage">Results</a></li>
+                    <li><a href="#forthPage">Summary</a></li>
+                    <li><a href="#fifthPage">Contact</a></li>
                 </ul>
                 <button class="toggle-btn">
                     <img src="images/menu_icon.png" alt="menu_icon">
                 </button>
             </nav>
             <div class="container">
-                <h2>Main Title</h2>
-                <p>Description: This is a test page</p>
-                <a href="">reference</a>
+                <div class="slogan">
+                    <h2>Main Title</h2>
+                    <p>Description: This is a test page</p>
+                </div>
             </div>
         </div><!-- //header -->
 
         <div class="section ppt" data-anchor="secondPage">
-            <div class="slide" id="slide1">
-                <div class="container">
-                    <h2>Subject</h2>
-                    <h2>Title</h2>
-                    <p>Description</p>
-                    <a href="">reference</a>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                    <div class="swiper-slide slide1">
+                        <div class="contents">
+                            <h2 class="title_bar center">Title</h2>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and 
+                                typesetting industry. Lorem Ipsum has been the industry's
+                                 standard dummy text ever since the 1500s, when an unknown 
+                                 printer took a galley of type and scrambled it to make a 
+                                 type specimen book. It has survived not only five centuries, 
+                                 but also the leap into electronic typesetting, remaining 
+                                 essentially unchanged. It was popularised in the 1960s with the 
+                                 release of Letraset sheets containing Lorem Ipsum passages, and 
+                                 more recently with desktop publishing software like Aldus PageMaker
+                                  including versions of Lorem Ipsum.
+                            </p>
+                        </div>                  
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <div class="contents">
+                            <h2 class="title_bar center">Title</h2>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and 
+                                typesetting industry. Lorem Ipsum has been the industry's
+                                 standard dummy text ever since the 1500s, when an unknown 
+                                 printer took a galley of type and scrambled it to make a 
+                                 type specimen book. It has survived not only five centuries, 
+                                 but also the leap into electronic typesetting, remaining 
+                                 essentially unchanged. It was popularised in the 1960s with the 
+                                 release of Letraset sheets containing Lorem Ipsum passages, and 
+                                 more recently with desktop publishing software like Aldus PageMaker
+                                  including versions of Lorem Ipsum.
+                            </p>
+                        </div>                     
+                    </div>
+                    <div class="swiper-slide slide3">
+                        <div class="contents">
+                            <h2 class="title_bar center">Title</h2>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and 
+                                typesetting industry. Lorem Ipsum has been the industry's
+                                 standard dummy text ever since the 1500s, when an unknown 
+                                 printer took a galley of type and scrambled it to make a 
+                                 type specimen book. It has survived not only five centuries, 
+                                 but also the leap into electronic typesetting, remaining 
+                                 essentially unchanged. It was popularised in the 1960s with the 
+                                 release of Letraset sheets containing Lorem Ipsum passages, and 
+                                 more recently with desktop publishing software like Aldus PageMaker
+                                  including versions of Lorem Ipsum.
+                            </p>
+                        </div>                      
+                    </div>
                 </div>
-            </div>
-            <div class="slide"  id="slide2">
-                <div class="container">
-                    <h2>Subject Title</h2>
-                    <p>Description</p>
-                    <a href="">reference</a>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev">
+                    <img src="../new design/images/left_arrow_button_white.png" width="50px" height="50px" alt="left_arrow_button">
                 </div>
-            </div>
-            <div class="slide"  id="slide3">
-                <div class="container">
-                    <h2>Subject Title</h2>
-                    <p>Description</p>
-                    <a href="">reference</a>
+                <div class="swiper-button-next">
+                    <img src="../new design/images/right_arrow_button_white.png" width="50px" height="50px" alt="right_arrow_button">
                 </div>
             </div>
         </div><!-- //ppt -->
 
-        <div class="section graph 1" data-anchor="thirdPage">Section3</div>
-        <div class="section graph 2" data-anchor="forthPage">Section4</div>
-        <div class="section graph 3" data-anchor="fifthPage">Section5</div>
-        <div class="section graph 4" data-anchor="sixthPage">Section6</div>
-        <div class="footer">footer</div>
+        <div class="section results" data-anchor="thirdPage">
+            <div class="graph-header">
+                <h2>graph description</h2>
+            </div>
+            <div class="graph">
+                <img src="../new design/images/graph_ex.png" alt="graph_ex">
+                <img src="../new design/images/donut_ex1.png" width="300px" height="300px" alt="donut_ex">
+            </div>
+        </div><!-- //results-->
+        <div class="section summary" data-anchor="forthPage">
+            <div class="graph-header">
+                <h2>summary</h2>
+            </div>
+            <div class="graph">
+                <img src="../new design/images/graph_ex.png" alt="graph_ex">
+                <img src="../new design/images/donut_ex1.png" width="300px" height="300px" alt="donut_ex">
+            </div>
+        </div><!--//summary-->
+        <div class="section footer fp-auto-height" data-anchor="fifthPage">
+            <ul class="footer_menu">
+                <li><a href="#firstPage">Home</a></li>
+                <li><a href="#secondPage">PPT</a></li>
+                <li><a href="#thirdPage">Results</a></li>
+                <li><a href="#forthPage">Summary</a></li>
+                <li><a href="#fifthPage">Contact</a></li>
+            </ul>
+            <ul class="social_menu">
+                <li><a href=""><i class="fab fa-github"></i></a></li>
+                <li><a href=""><i class="fas fa-envelope-open-text"></i></a></li>
+                <li><a href=""><i class="fas fa-phone"></i></a></li>
+            </ul>
+            <p class="copyright">design copyright ajjajajaj</p>
+        </div><!-- //footer-->
     </div>
 </body>
 </html>
