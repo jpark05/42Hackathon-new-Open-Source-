@@ -112,7 +112,8 @@ body{
 }
 .slogan{
     font-family: 'Y_Spotlight', sans-serif;
-    margin-left: 100px; 
+    margin-left: 100px;
+    margin-bottom: 100px;
  }
  
 .slogan h2{
@@ -171,8 +172,9 @@ body{
 
 .contents p{
     margin: 27px 0 40px;
-    color:#fff;
+    color:#fff; 
 }
+
 .title_bar{
     position: relative;
 }
