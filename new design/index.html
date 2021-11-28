@@ -38,9 +38,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <!-- PPT PAGE SWIPER-->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!--GRAPH PART-->
+    <script src="multi_scale_data.json" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <!-- MAIN PAGE FULLPAGE JS-->
     <script src="js/fullpage.min.js"></script>
@@ -55,8 +55,9 @@
         <a href="#firstPage" class="active">firstPage</a>
         <a href="#secondPage">secondPage</a>
         <a href="#thirdPage" class="active">thirdPage</a>
-        <a href="#forthpage" class="active">forthpage</a>
-        <a href="#fifthpage" class="active">fifthpage</a>
+        <a href="#forthPage" class="active">forthpage</a>
+        <a href="#fifthPage" class="active">fifthpage</a>
+        <a href="#sixthPage" class="active">sixthpage</a>
     </aside>
     <div id="fullpage">
         <div class="section video header" data-anchor="firstPage">
@@ -74,126 +75,206 @@
                 </h1>
                 <ul class="main-menu">
                     <li><a href="#firstPage">Home</a></li>
-                    <li><a href="#secondPage">PPT</a></li>
-                    <li><a href="#thirdPage">Results</a></li>
-                    <li><a href="#forthPage">Summary</a></li>
-                    <li><a href="#fifthPage">Contact</a></li>
+                    <li><a href="#secondPage">Presentation</a></li>
+                    <li><a href="#thirdPage">32-Thread</a></li>
+                    <li><a href="#forthPage">64-Thread</a></li>
+                    <li><a href="#fifthPage">Grafana</a></li>
+                    <li><a href="#sixthPage">Contact</a></li>
                 </ul>
-                <button class="toggle-btn">
-                    <img src="images/menu_icon.png" alt="menu_icon">
-                </button>
             </nav>
             <div class="container">
                 <div class="slogan">
-                    <h2>Main Title</h2>
-                    <p>Description: This is a test page</p>
+                    <h2>Altibase 성능테스트</h2>
+                    <p>Altibase 버전비교 성능테스트 및 오픈 소스를 이용한 실시간 모니터링 시각화</p>
                 </div>
             </div>
         </div><!-- //header -->
 
         <div class="section ppt" data-anchor="secondPage">
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                  <!-- Slides -->
-                    <div class="swiper-slide slide1">
-                        <div class="contents">
-                            <h2 class="title_bar center">Title</h2>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and 
-                                typesetting industry. Lorem Ipsum has been the industry's
-                                 standard dummy text ever since the 1500s, when an unknown 
-                                 printer took a galley of type and scrambled it to make a 
-                                 type specimen book. It has survived not only five centuries, 
-                                 but also the leap into electronic typesetting, remaining 
-                                 essentially unchanged. It was popularised in the 1960s with the 
-                                 release of Letraset sheets containing Lorem Ipsum passages, and 
-                                 more recently with desktop publishing software like Aldus PageMaker
-                                  including versions of Lorem Ipsum.
-                            </p>
-                        </div>                  
-                    </div>
-                    <div class="swiper-slide slide2">
-                        <div class="contents">
-                            <h2 class="title_bar center">Title</h2>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and 
-                                typesetting industry. Lorem Ipsum has been the industry's
-                                 standard dummy text ever since the 1500s, when an unknown 
-                                 printer took a galley of type and scrambled it to make a 
-                                 type specimen book. It has survived not only five centuries, 
-                                 but also the leap into electronic typesetting, remaining 
-                                 essentially unchanged. It was popularised in the 1960s with the 
-                                 release of Letraset sheets containing Lorem Ipsum passages, and 
-                                 more recently with desktop publishing software like Aldus PageMaker
-                                  including versions of Lorem Ipsum.
-                            </p>
-                        </div>                     
-                    </div>
-                    <div class="swiper-slide slide3">
-                        <div class="contents">
-                            <h2 class="title_bar center">Title</h2>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and 
-                                typesetting industry. Lorem Ipsum has been the industry's
-                                 standard dummy text ever since the 1500s, when an unknown 
-                                 printer took a galley of type and scrambled it to make a 
-                                 type specimen book. It has survived not only five centuries, 
-                                 but also the leap into electronic typesetting, remaining 
-                                 essentially unchanged. It was popularised in the 1960s with the 
-                                 release of Letraset sheets containing Lorem Ipsum passages, and 
-                                 more recently with desktop publishing software like Aldus PageMaker
-                                  including versions of Lorem Ipsum.
-                            </p>
-                        </div>                      
-                    </div>
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-              
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev">
-                    <img src="../new design/images/left_arrow_button_white.png" width="50px" height="50px" alt="left_arrow_button">
-                </div>
-                <div class="swiper-button-next">
-                    <img src="../new design/images/right_arrow_button_white.png" width="50px" height="50px" alt="right_arrow_button">
-                </div>
+            <div class="slide ppt slide1">                
             </div>
+            <div class="slide ppt slide2">
+                <div class="contents">
+                    <h2 class="title_bar center">Title</h2>
+                        <p>
+                                Lorem Ipsum is simply dummy text of the printing and 
+                                typesetting industry. Lorem Ipsum has been the industry's
+                                 standard dummy text ever since the 1500s, when an unknown 
+                                 printer took a galley of type and scrambled it to make a 
+                                 type specimen book. It has survived not only five centuries, 
+                                 but also the leap into electronic typesetting, remaining 
+                                 essentially unchanged. It was popularised in the 1960s with the 
+                                 release of Letraset sheets containing Lorem Ipsum passages, and 
+                                 more recently with desktop publishing software like Aldus PageMaker
+                                  including versions of Lorem Ipsum.
+                        </p>
+                </div>                     
+            </div>
+            <div class="slide ppt slide3">
+                <div class="contents">
+                    <h2 class="title_bar center">Title</h2>
+                        <p>
+                                Lorem Ipsum is simply dummy text of the printing and 
+                                typesetting industry. Lorem Ipsum has been the industry's
+                                 standard dummy text ever since the 1500s, when an unknown 
+                                 printer took a galley of type and scrambled it to make a 
+                                 type specimen book. It has survived not only five centuries, 
+                                 but also the leap into electronic typesetting, remaining 
+                                 essentially unchanged. It was popularised in the 1960s with the 
+                                 release of Letraset sheets containing Lorem Ipsum passages, and 
+                                 more recently with desktop publishing software like Aldus PageMaker
+                                  including versions of Lorem Ipsum.
+                        </p>
+                </div>
+            </div>                    
         </div><!-- //ppt -->
 
-        <div class="section results" data-anchor="thirdPage">
+        <div class="section thread 32" data-anchor="thirdPage">
             <div class="graph-header">
-                <h2>graph description</h2>
+                <h2>32-Thread Test Results</h2>
             </div>
-            <div class="graph">
-                <img src="../new design/images/graph_ex.png" alt="graph_ex">
-                <img src="../new design/images/donut_ex1.png" width="300px" height="300px" alt="donut_ex">
+            <div class="graph-table">
+                <table class='env_info' id = 'env_info_32'>
+                    <tr>
+                        <th></th>
+                        <th id="table_label_top">ver7.1</th>
+                        <th id="table_label_top">ver7.2</th>
+                    </tr>
+                    <tr>
+                        <th id="table_label">OS:</th>
+                        <th class='os' id='ver71_os_32'></th>
+                        <th class='os' id='ver72_os_32'></th>
+                    </tr>
+                    <tr>
+                        <th id="table_label">version:</th>
+                        <th class='version' id="ver71_version_32"></th>
+                        <th class='version' id="ver72_version_32"></th>
+                    </tr>
+                    <tr>
+                        <th id="table_label">revision:</th>
+                        <th class='revision' id="ver71_revision_32"></th>
+                        <th class='revision' id="ver72_revision_32"></th>
+                    </tr>
+                </table>
             </div>
-        </div><!-- //results-->
-        <div class="section summary" data-anchor="forthPage">
+            <div class="slide graph1">
+                <div class="button_up frame">
+                    <input type="button" class="btn_Insert" id="btn_Insert_32" value="Insert">
+                    <input type="button" class="btn_Update" id="btn_Update_32" value="Update">
+                    <input type="button" class="btn_Select" id="btn_Select_32" value="Select">
+                    <input type="button" class="btn_Delete" id="btn_Delete_32" value="Delete">
+                </div>
+                <div class="button_down frame">
+                    <input type="button" class="btn_Insert+Select" id="btn_Insert+Select_32" value="Insert+Select">
+                    <input type="button" class="btn_Select+Update" id="btn_Select+Update_32" value="Select+Update">
+                    <input type="button" class="btn_Insert+Select+Update" id="btn_Insert+Select+Update_32" value="Insert+Select+Update">
+                </div>
+                <div class='chart_frame'>
+                    <div class='chart_sql'>
+                        <canvas id="chart_sql_32" width="100%"></canvas>
+                    </div>
+                    <div class="chart_cpu_ram_frame">
+                        <div class='chart_cpu'>
+                            <canvas id="chart_cpu_32" width="100%"></canvas>
+                        </div>
+                        <div class='chart_memory'>
+                            <canvas id="chart_memory_32" width="100%"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide grah2">
+                <div class="chart_frame">
+                    <div class="chart_avr">
+                        <canvas id="chart_avr_32" width="100%"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div><!-- //thread_32-->
+
+        <div class="section thread 64" data-anchor="forthPage">
             <div class="graph-header">
-                <h2>summary</h2>
+                <h2>64-Thread Test Results</h2>
             </div>
-            <div class="graph">
-                <img src="../new design/images/graph_ex.png" alt="graph_ex">
-                <img src="../new design/images/donut_ex1.png" width="300px" height="300px" alt="donut_ex">
+            <div class="graph-table">
+                <table class='env_info' id = 'env_info_64'>
+                    <tr>
+                        <th></th>
+                        <th id="table_label_top">ver7.1</th>
+                        <th id="table_label_top">ver7.2</th>
+                    </tr>
+                    <tr>
+                        <th id="table_label">OS:</th>
+                        <th class='os' id='ver71_os_64'></th>
+                        <th class='os' id='ver72_os_64'></th>
+                    </tr>
+                    <tr>
+                        <th id="table_label">version:</th>
+                        <th class='version' id="ver71_version_64"></th>
+                        <th class='version' id="ver72_version_64"></th>
+                    </tr>
+                    <tr>
+                        <th id="table_label">revision:</th>
+                        <th class='revision' id="ver71_revision_64"></th>
+                        <th class='revision' id="ver72_revision_64"></th>
+                    </tr>
+                </table>
             </div>
-        </div><!--//summary-->
-        <div class="section footer fp-auto-height" data-anchor="fifthPage">
+            <div class="slide graph1">
+                <div class="button_up frame">
+                    <input type="button" class="btn_Insert" id="btn_Insert_64" value="Insert">
+                    <input type="button" class="btn_Update" id="btn_Update_64" value="Update">
+                    <input type="button" class="btn_Select" id="btn_Select_64" value="Select">
+                    <input type="button" class="btn_Delete" id="btn_Delete_64" value="Delete">
+                </div>
+                <div class="button_down frame">
+                    <input type="button" class="btn_down Insert+Select" id="btn_Insert+Select_64" value="Insert+Select">
+                    <input type="button" class="btn_down Select+Update" id="btn_Select+Update_64" value="Select+Update">
+                    <input type="button" class="btn_down Insert+Select+Update" id="btn_Insert+Select+Update_64" value="Insert+Select+Update">
+                </div>
+                <div class='chart_frame'>
+                    <div class='chart_sql'>
+                        <canvas id="chart_sql_64" width="100%"></canvas>
+                    </div>
+                    <div class="chart_cpu_ram_frame">
+                        <div class='chart_cpu'>
+                            <canvas id="chart_cpu_64" width="100%"></canvas>
+                        </div>
+                        <div class='chart_memory'>
+                            <canvas id="chart_memory_64" width="100%"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide graph2">
+                <div class="chart_frame">
+                    <div class="chart_avr">
+                        <canvas id="chart_avr_64" width="100%"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div><!--//thread_64-->
+
+        <div class ="section monitoring" data-anchor="fifthPage">
+            <iframe id="moni1" src="http://10.51.25.2:3000/d/yymp8Apnk/cpu-memory-usage?orgId=1&refresh=1s&from=1637985634405&to=1638007234405" width="100%" height="100%" frameborder="0"></iframe>
+        </div><!-- //monitoring-->
+        <div class="section footer fp-auto-height" data-anchor="sixthPage">
             <ul class="footer_menu">
                 <li><a href="#firstPage">Home</a></li>
-                <li><a href="#secondPage">PPT</a></li>
-                <li><a href="#thirdPage">Results</a></li>
-                <li><a href="#forthPage">Summary</a></li>
-                <li><a href="#fifthPage">Contact</a></li>
+                <li><a href="#secondPage">Presentation</a></li>
+                <li><a href="#thirdPage">32-Thread</a></li>
+                <li><a href="#forthPage">64-Thread</a></li>
+                <li><a href="#fifthPage">Grafana</a></li>
+                <li><a href="#sixthPage">Contact</a></li>
             </ul>
             <ul class="social_menu">
-                <li><a href=""><i class="fab fa-github"></i></a></li>
-                <li><a href=""><i class="fas fa-envelope-open-text"></i></a></li>
-                <li><a href=""><i class="fas fa-phone"></i></a></li>
+                <li><a href="https://github.com/jpark05/42Hackathon-new-Open-Source-"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://altibase.com/kr/index.php"><i class="fas fa-database"></i></a></li>
             </ul>
-            <p class="copyright">design copyright ajjajajaj</p>
+            <p class="copyright">© Copyright by 디비디비딥</p>
         </div><!-- //footer-->
     </div>
+    <script src="js/graph_test.js"></script>
 </body>
+
 </html>
