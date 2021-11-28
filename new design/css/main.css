@@ -1,20 +1,6 @@
 @import url(reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 @font-face {
-<<<<<<< HEAD
-    font-family: "Y_Spotlight";
-    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "YdestreetL";
-    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/YdestreetL.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-=======
     font-family: 'Y_Spotlight';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
     font-weight: normal;
@@ -27,7 +13,6 @@
     font-style: normal;
 }
 
->>>>>>> f25037781bce192c7082a932ef70768ffe0497ea
 /* typography */
 body{
     font-family: 'Lato', sans-serif;
